@@ -1,0 +1,36 @@
+Git 
+
+Ferramenta criada para fazer o controle de versões distribuído de código fonte.
+Captura snapshots do código ao longo do tempo.
+Repositório local.
+
+GitHub
+
+Permite levar os códigos do repositório Git para a nuvem.
+Configurações do Git
+O Git guarda suas informações nos seguintes arquivos:
+
+git config (sistema como um todo)
+git config (usuário global)
+git config (projeto)
+
+git config --global user.name “Marcos Vinicius”
+git config --global user.email “marcos.mva18@hotmail.com”
+git config --global core.editor vim
+git config user.name
+git config user.email
+git config --list
+
+Inicializando um repositório
+
+Criar primeiro uma pasta para guardar os arquivos do projeto e entrar nela.
+git init
+
+Será criado um diretório .git que terá algumas pastas responsáveis por guardar as configurações do repositório, branches, description, hooks…
+
+Ciclo de vida dos status do arquivos
+
+untracked - arquivo novo no repositório, mas ainda não foi reconhecido pelo Git.
+unmodified - arquivo adicionado ao Git, mas ainda não foi modificado.
+modified - depois de modificar o arquivo, mover para stage (onde será criada a versão).
+staged - arquivos modificados serão salvos no próximo commit, e após isso, voltará para unmodified.
